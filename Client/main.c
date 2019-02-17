@@ -1,6 +1,6 @@
 /*
 (SandChat(Simple multi-thread chat))::(Client)::(main.c)
-Ñopyright © 2017 by ducjklellyu (a.k.a Alexander Rosenthal) all rights reserved.
+Ã‘opyright Â© 2017 by ducjklellyu (a.k.a Alexander Rosenthal) all rights reserved.
 
 GitHub profile - "https://github.com/ducjklellyu".
 Telegram - "@Sunuia".
@@ -43,7 +43,7 @@ int main()
 	// addr -<
 	ex_CONNECT(Socket, local_addr);
 
-	fgets(&inputbuffer[0], sizeof(inputbuffer), stdin);
+	gets(inputbuffer[0]);
 	send(Socket, &inputbuffer[0], sizeof(inputbuffer), 0);
 	_CLEARBUFF(inputbuffer[0]);
 
@@ -51,7 +51,7 @@ int main()
 	while (1)
 	{
 		_CLEARBUFF(inputbuffer[bytes_recv]);
-		fgets(&inputbuffer[0], sizeof(inputbuffer), stdin);
+		gets(inputbuffer[0]);
 		if (strcmp(&inputbuffer[0], "_exit") == 0)
 			break;
 		send(Socket, &inputbuffer[0], sizeof(inputbuffer), 0);
