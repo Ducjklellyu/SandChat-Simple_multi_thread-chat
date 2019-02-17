@@ -43,7 +43,7 @@ int main()
 	// addr -<
 	ex_CONNECT(Socket, local_addr);
 
-	gets(inputbuffer[0]);
+	_GET(&inputbuffer[0]);
 	send(Socket, &inputbuffer[0], sizeof(inputbuffer), 0);
 	_CLEARBUFF(inputbuffer[0]);
 
@@ -51,7 +51,7 @@ int main()
 	while (1)
 	{
 		_CLEARBUFF(inputbuffer[bytes_recv]);
-		gets(inputbuffer[0]);
+		_GET(&inputbuffer[0]);
 		if (strcmp(&inputbuffer[0], "_exit") == 0)
 			break;
 		send(Socket, &inputbuffer[0], sizeof(inputbuffer), 0);
