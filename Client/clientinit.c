@@ -1,6 +1,6 @@
 /*
 (SandChat(Simple multi-thread chat))::(Client)::(clientinit.c)
-Ñopyright © 2017 by ducjklellyu (a.k.a Alexander Rosenthal) all rights reserved.
+Ã‘opyright Â© 2017 by ducjklellyu (a.k.a Alexander Rosenthal) all rights reserved.
 
 GitHub profile - "https://github.com/ducjklellyu".
 Telegram - "@Sunuia".
@@ -8,8 +8,6 @@ Telegram - "@Sunuia".
 !!!
 Look clientinit.h first
 */
-
-#define _WINSOCK_DEPRECATED_NO_WARNINGS
 
 #include "clientinit.h"
 
