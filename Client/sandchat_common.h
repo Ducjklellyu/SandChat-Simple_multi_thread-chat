@@ -7,6 +7,6 @@ Telegram - "@Sunuia".
 
 */
 #pragma once
-#define  _FUNCTHREAD unsigned int __stdcall 
 #define	 _CLEARBUFF(x) (x=0)
 #define  _GET(x) (gets(x))
+int bytes_recv; // Variable to save recv returned value.
